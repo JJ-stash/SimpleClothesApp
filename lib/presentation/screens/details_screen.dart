@@ -3,7 +3,7 @@ import 'package:midterm_app/data/models/clothes_models.dart';
 import 'package:midterm_app/data/repository/clothes_repo.dart';
 
 class DetailsScreen extends StatefulWidget {
-  DetailsScreen({Key? key}) : super(key: key);
+  const DetailsScreen({Key? key}) : super(key: key);
 
   static const routeName = "/details-screen";
 

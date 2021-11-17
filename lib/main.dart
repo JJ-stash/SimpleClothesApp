@@ -11,10 +11,10 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: 'Midterm App', home: HomeScreen(), routes: {
-      AddScreen.routeName: (ctx) => AddScreen(),
-      DetailsScreen.routeName: (ctx) => DetailsScreen(),
-      EditScreen.routeName: (ctx) => EditScreen(),
+    return MaterialApp(title: 'Midterm App', home: const HomeScreen(), routes: {
+      AddScreen.routeName: (ctx) => const AddScreen(),
+      DetailsScreen.routeName: (ctx) => const DetailsScreen(),
+      EditScreen.routeName: (ctx) => const EditScreen(),
     });
   }
 }

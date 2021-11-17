@@ -48,8 +48,15 @@ class _EditScreenState extends State<EditScreen> {
               children: [
                 TextFormField(
                   controller: clotheID,
-                  decoration:
-                      const InputDecoration(hintText: 'Please enter ID'),
+                  decoration: const InputDecoration(
+                    hintText: 'Please enter ID',
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(0),
+                      ),
+                      borderSide: BorderSide(color: Colors.black, width: 1),
+                    ),
+                  ),
                   keyboardType: TextInputType.number,
                   validator: (value) {
                     if (value == null || value.isEmpty) {
@@ -58,10 +65,18 @@ class _EditScreenState extends State<EditScreen> {
                     return null;
                   },
                 ),
+                const Spacer(),
                 TextFormField(
                   controller: clotheName,
-                  decoration:
-                      const InputDecoration(hintText: 'Please enter Name'),
+                  decoration: const InputDecoration(
+                    hintText: 'Please enter Name',
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(0),
+                      ),
+                      borderSide: BorderSide(color: Colors.black, width: 1),
+                    ),
+                  ),
                   keyboardType: TextInputType.text,
                   validator: (value) {
                     if (value == null || value.isEmpty) {
@@ -70,10 +85,18 @@ class _EditScreenState extends State<EditScreen> {
                     return null;
                   },
                 ),
+                const Spacer(),
                 TextFormField(
                   controller: clotheUrl,
-                  decoration:
-                      const InputDecoration(hintText: 'Please enter Image'),
+                  decoration: const InputDecoration(
+                    hintText: 'Please enter Image',
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(0),
+                      ),
+                      borderSide: BorderSide(color: Colors.black, width: 1),
+                    ),
+                  ),
                   keyboardType: TextInputType.text,
                   validator: (value) {
                     if (value == null || value.isEmpty) {
@@ -82,10 +105,18 @@ class _EditScreenState extends State<EditScreen> {
                     return null;
                   },
                 ),
+                const Spacer(),
                 TextFormField(
                   controller: clotheSize,
-                  decoration:
-                      const InputDecoration(hintText: 'Please enter Size'),
+                  decoration: const InputDecoration(
+                    hintText: 'Please enter Size',
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(0),
+                      ),
+                      borderSide: BorderSide(color: Colors.black, width: 1),
+                    ),
+                  ),
                   keyboardType: TextInputType.text,
                   validator: (value) {
                     if (value == null || value.isEmpty) {
@@ -94,10 +125,18 @@ class _EditScreenState extends State<EditScreen> {
                     return null;
                   },
                 ),
+                const Spacer(),
                 TextFormField(
                   controller: clothePrice,
-                  decoration:
-                      const InputDecoration(hintText: 'Please enter Price'),
+                  decoration: const InputDecoration(
+                    hintText: 'Please enter Price',
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(0),
+                      ),
+                      borderSide: BorderSide(color: Colors.black, width: 1),
+                    ),
+                  ),
                   keyboardType: TextInputType.number,
                   validator: (value) {
                     if (value == null || value.isEmpty) {
@@ -106,10 +145,18 @@ class _EditScreenState extends State<EditScreen> {
                     return null;
                   },
                 ),
+                const Spacer(),
                 TextFormField(
                   controller: clotheDesc,
                   decoration: const InputDecoration(
-                      hintText: 'Please enter Description'),
+                    hintText: 'Please enter Description',
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(0),
+                      ),
+                      borderSide: BorderSide(color: Colors.black, width: 1),
+                    ),
+                  ),
                   keyboardType: TextInputType.text,
                   validator: (value) {
                     if (value == null || value.isEmpty) {

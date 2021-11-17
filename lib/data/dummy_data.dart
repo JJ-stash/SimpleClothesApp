@@ -1,5 +1,6 @@
 import 'package:midterm_app/data/models/clothes_models.dart';
 
+// ignore: non_constant_identifier_names
 var DUMMY_DATA = [
   Clothes(
       id: 1,

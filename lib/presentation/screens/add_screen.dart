@@ -3,7 +3,7 @@ import 'package:midterm_app/data/models/clothes_models.dart';
 import 'package:midterm_app/data/repository/clothes_repo.dart';
 
 class AddScreen extends StatefulWidget {
-  AddScreen({Key? key}) : super(key: key);
+  const AddScreen({Key? key}) : super(key: key);
 
   static const routeName = "/add-screen";
 
@@ -38,8 +38,15 @@ class _AddScreenState extends State<AddScreen> {
                 children: [
                   TextFormField(
                     controller: clotheID,
-                    decoration:
-                        const InputDecoration(hintText: 'Please enter ID'),
+                    decoration: const InputDecoration(
+                      hintText: 'Please enter ID',
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(0),
+                        ),
+                        borderSide: BorderSide(color: Colors.black, width: 1),
+                      ),
+                    ),
                     keyboardType: TextInputType.number,
                     validator: (value) {
                       if (value == null || value.isEmpty) {
@@ -50,8 +57,15 @@ class _AddScreenState extends State<AddScreen> {
                   ),
                   TextFormField(
                     controller: clotheName,
-                    decoration:
-                        const InputDecoration(hintText: 'Please enter Name'),
+                    decoration: const InputDecoration(
+                      hintText: 'Please enter Name',
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(0),
+                        ),
+                        borderSide: BorderSide(color: Colors.black, width: 1),
+                      ),
+                    ),
                     keyboardType: TextInputType.text,
                     validator: (value) {
                       if (value == null || value.isEmpty) {
@@ -62,8 +76,15 @@ class _AddScreenState extends State<AddScreen> {
                   ),
                   TextFormField(
                     controller: clotheUrl,
-                    decoration:
-                        const InputDecoration(hintText: 'Please enter Image'),
+                    decoration: const InputDecoration(
+                      hintText: 'Please enter Image',
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(0),
+                        ),
+                        borderSide: BorderSide(color: Colors.black, width: 1),
+                      ),
+                    ),
                     keyboardType: TextInputType.text,
                     validator: (value) {
                       if (value == null || value.isEmpty) {
@@ -74,8 +95,15 @@ class _AddScreenState extends State<AddScreen> {
                   ),
                   TextFormField(
                     controller: clotheSize,
-                    decoration:
-                        const InputDecoration(hintText: 'Please enter Size'),
+                    decoration: const InputDecoration(
+                      hintText: 'Please enter Size',
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(0),
+                        ),
+                        borderSide: BorderSide(color: Colors.black, width: 1),
+                      ),
+                    ),
                     keyboardType: TextInputType.text,
                     validator: (value) {
                       if (value == null || value.isEmpty) {
@@ -86,8 +114,15 @@ class _AddScreenState extends State<AddScreen> {
                   ),
                   TextFormField(
                     controller: clothePrice,
-                    decoration:
-                        const InputDecoration(hintText: 'Please enter Price'),
+                    decoration: const InputDecoration(
+                      hintText: 'Please enter Price',
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(0),
+                        ),
+                        borderSide: BorderSide(color: Colors.black, width: 1),
+                      ),
+                    ),
                     keyboardType: TextInputType.number,
                     validator: (value) {
                       if (value == null || value.isEmpty) {
@@ -99,7 +134,14 @@ class _AddScreenState extends State<AddScreen> {
                   TextFormField(
                     controller: clotheDesc,
                     decoration: const InputDecoration(
-                        hintText: 'Please enter Description'),
+                      hintText: 'Please enter Description',
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(0),
+                        ),
+                        borderSide: BorderSide(color: Colors.black, width: 1),
+                      ),
+                    ),
                     keyboardType: TextInputType.text,
                     validator: (value) {
                       if (value == null || value.isEmpty) {
